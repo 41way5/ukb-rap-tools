@@ -30,14 +30,14 @@
 #	- write out bgen file with only those markers that match
 
 #set this to the exome sequence directory that you want (should contain PLINK formatted files)
-imp_file_dir="/Bulk/Imputation/UKB imputation from genotype/"
+imp_file_dir="ProtAge:/Bulk/Imputation/UKB imputation from genotype/"
 #set this to the imputed data field for your release
 data_field="ukb22828"
 
 pheno=${1:-"lung"}
 #data_file_dir="/data/imp37_prsfiles/"
-data_file_dir="/data/imp37_prsfiles_pdac/"
-txt_file_dir="/PRS/"
+data_file_dir="ProtAge:/data/imp37_prsfiles_pdac/"
+txt_file_dir="ProtAge://PRS/"
 project="ProtAge"
 #rsidlist="rsidlist.txt"
 rsidlist="rsidlist_${pheno}.txt"
