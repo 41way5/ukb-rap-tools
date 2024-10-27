@@ -33,14 +33,15 @@
 imp_file_dir="/Bulk/Imputation/UKB imputation from genotype/"
 #set this to the imputed data field for your release
 data_field="ukb22828"
+pheno=${1:-"lung"}
 #data_file_dir="/data/imp37_prsfiles/"
-data_file_dir="/data/imp37_prsfiles_pdac/"
-txt_file_dir="/prs_textfiles/"
+data_file_dir="/data/imp37_prsfiles_pdac/${pheno}"
+txt_file_dir="/PRS/"
 
 #rsidlist="rsidlist.txt"
-rsidlist="pgs002264_rsidlist.txt"
+rsidlist="rsidlist_${pheno}.txt"
 #chr_pos_file="chrposlist.txt"
-chr_pos_file="pgs002264_chrposlist.txt"
+chr_pos_file="chrposlist_${pheno}.txt"
 
 
 # loop over each autosomal chromosome
