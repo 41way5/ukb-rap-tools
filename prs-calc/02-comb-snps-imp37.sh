@@ -37,21 +37,17 @@
 
 
 #set this to the exome sequence directory that you want (should contain PLINK formatted files)
-imp_file_dir="/Bulk/Imputation/UKB imputation from genotype/"
-exome_file_dir="/Bulk/Exome sequences/Population level exome OQFE variants, PLINK format - final release/"
+imp_file_dir="ProtAge:/Bulk/Imputation/UKB imputation from genotype/"
+exome_file_dir="ProtAge:/Bulk/Exome sequences/Population level exome OQFE variants, PLINK format - final release/"
 #set this to the exome data field for your release
 data_field="ukb22828"
-#data_file_dir="/data/imp37_prsfiles/"
+
 data_file_dir="/data/imp37_prsfiles_pdac/"
-txt_file_dir="/prs_textfiles/"
+txt_file_dir="ProtAge:/PRS/"
 
-#prs_out="ex_prs"
-#prsfile="ex_prsfile.txt"
-#scorefile="scorefile.txt"
-
-prsout="pgs002264_pdac"
-prsfile="PGS002264_PDAC_GRCh37.txt"
-scorefile="pgs002264_scorefile.txt"
+prsout="prs_${pheno}"
+prsfile="GRCh37_${pheno}.txt"
+scorefile="scorefile_${pheno}.txt"
 
 
   combine_snps='
