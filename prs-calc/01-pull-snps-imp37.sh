@@ -35,13 +35,13 @@ imp_file_dir="ProtAge:/Bulk/Imputation/UKB imputation from genotype/"
 data_field="ukb22828"
 
 pheno=${1:-"lung"}
-#data_file_dir="/data/imp37_prsfiles/"
-data_file_dir="ProtAge:/data/imp37_prsfiles_pdac/"
-txt_file_dir="ProtAge://PRS/"
+
+data_file_dir="/data/imp37_prsfiles_pdac/"
+txt_file_dir="/PRS/"
 project="ProtAge"
-#rsidlist="rsidlist.txt"
+
 rsidlist="rsidlist_${pheno}.txt"
-#chr_pos_file="chrposlist.txt"
+
 chr_pos_file="chrposlist_${pheno}.txt"
 
 
