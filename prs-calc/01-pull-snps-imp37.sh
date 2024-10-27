@@ -36,7 +36,7 @@ data_field="ukb22828"
 
 pheno=${1:-"lung"}
 
-data_file_dir="/data/imp37_prsfiles_pdac/"
+data_file_dir="/data/imp37_prsfiles_pdac/${pheno}/"
 txt_file_dir="/PRS/"
 project="ProtAge"
 
