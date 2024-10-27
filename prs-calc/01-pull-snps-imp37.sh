@@ -53,7 +53,7 @@ for i in {1..22}; do
     dx run swiss-army-knife -iin="${imp_file_dir}/${data_field}_c${i}_b0_v3.bgen" \
      -iin="${imp_file_dir}/${data_field}_c${i}_b0_v3.sample" \
      -iin="${imp_file_dir}/${data_field}_c${i}_b0_v3.bgen.bgi" \
-     -iin="${txt_file_dir}/${rsidlist}" -iin="/${txt_file_dir}/${chr_pos_file}" \
+     -iin="${project}:${txt_file_dir}/${rsidlist}" -iin="${project}:/${txt_file_dir}/${chr_pos_file}" \
      -icmd="${run_snps}" --tag="SelectSNPs" --instance-type "mem2_ssd2_v2_x16"\
      --destination="${project}:${data_file_dir}" --brief --yes
 
