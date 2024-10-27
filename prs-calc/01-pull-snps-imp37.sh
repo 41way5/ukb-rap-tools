@@ -33,11 +33,12 @@
 imp_file_dir="/Bulk/Imputation/UKB imputation from genotype/"
 #set this to the imputed data field for your release
 data_field="ukb22828"
+
 pheno=${1:-"lung"}
 #data_file_dir="/data/imp37_prsfiles/"
 data_file_dir="/data/imp37_prsfiles_pdac/${pheno}"
 txt_file_dir="/PRS/"
-
+project="ProtAge"
 #rsidlist="rsidlist.txt"
 rsidlist="rsidlist_${pheno}.txt"
 #chr_pos_file="chrposlist.txt"
