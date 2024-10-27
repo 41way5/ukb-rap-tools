@@ -43,7 +43,7 @@ exome_file_dir="ProtAge:/Bulk/Exome sequences/Population level exome OQFE varian
 data_field="ukb22828"
 pheno=${1:-"lung"}
 
-data_file_dir="/data/imp37_prsfiles_pdac/${pheno}"
+data_file_dir="/data/imp37_prsfiles_pdac/${pheno}/"
 txt_file_dir="ProtAge:/PRS"
 
 prsout="prs_${pheno}"
