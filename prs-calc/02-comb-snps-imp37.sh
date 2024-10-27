@@ -41,6 +41,7 @@ imp_file_dir="ProtAge:/Bulk/Imputation/UKB imputation from genotype/"
 exome_file_dir="ProtAge:/Bulk/Exome sequences/Population level exome OQFE variants, PLINK format - final release/"
 #set this to the exome data field for your release
 data_field="ukb22828"
+pheno=${1:-"lung"}
 
 data_file_dir="/data/imp37_prsfiles_pdac/"
 txt_file_dir="ProtAge:/PRS"
